@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>hover effect animitia effect</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <style>  
+ .common{
+     width:280px;
+     height:212px;
+}
+ .box1{
+     background-image: url(./img/1.jpg);
+     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0,.2 );
+     background-size: cover;
+     position: relative;
+     overflow:hidden;
+     float: left;
+     margin:12px;
+     cursor: pointer;
+}
+ .ab{
+     background:rgba(0, 0, 0, .5);
+     position: absolute;
+     top:-212px;
+     left: 0%;
+     transition-property: all;
+     transition-duration: .5s;
+     transition-timing-function: ease-in-out;
+}
+ .bc{
+    top:0px;
+     opacity:0;
+     transition-duration: .3s;
+}
+ .box1:hover .bc{
+     opacity: 1;
+}
+ .box1:hover .ab {
+     top:0px;
+}
+ .ab >a{
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     background: white;
+     border-radius: 50px;
+     text-align: center;
+     line-height: 50px;
+     position: absolute;
+     top: 81px;
+     left:85px;
+     color: #464646;
+}
+ .anchor{
+     left: 145px!important;
+}
+ .bc-1{
+    left: 40px!important;
+     transition: all;
+     transition-duration:.2s;
+     transition-timing-function:ease-in-out;
+}
+ .box1:hover .ab > .bc-1{
+     left: 85px !important;
+}
+ .bc-2{
+     left: 190px !important;
+     transition: all .2s ease-in-out;
+}
+ .box1:hover .ab> .bc-2{
+     left: 140px !important;
+}
+ .a7-1,.a7-2{
+     transform: scale(1.5);
+     transition: all .2s linear;
+}
+ .box1:hover .a7-1 ,.box1:hover .a7-2{
+     transform: scale(1);
+}
+ .a8-1,.a8-2{
+     transform: scale(.5);
+     transition: all .2s linear;
+}
+ .box1:hover .a8-1 ,.box1:hover .a8-2{
+     transform: scale(1);
+}
+ .a9-1{
+     transform: scale(0);
+     transition: all .2s linear;
+}
+ .box1:hover .a9-1{
+     transform: scale(1);
+}
+ .a9-2{
+     transform-origin:-20px center;
+     transform: rotateZ(-359deg) scale(0);
+     transition: all .2s linear;
+}
+ .box1:hover .a9-2{
+     transform: rotateZ(0deg) scale(1);
+}
+ .a10-2{
+     transform: scale(0);
+     transition: all .2s linear;
+}
+ .box1:hover .a10-2{
+     transform: scale(1);
+}
+ .a10-1{
+     transform-origin:70px center;
+     transform: rotateZ(-359deg) scale(0);
+     transition: all .2s linear;
+}
+ .box1:hover .a10-1{
+     transform: rotateZ(0deg) scale(1);
+}
+ .a11-1{
+     transform-origin:-100px center;
+     transform: rotateZ(180deg);
+     transition: all .2s ease-in-out;
+}
+ .a11-2{
+     transform-origin:120px center;
+     transform: rotateZ(180deg);
+     transition: all .2s ease-in-out;
+}
+ .box1:hover .a11-1{
+     transform:rotateZ(0deg);
+}
+ .box1:hover .a11-2{
+     transform: rotateZ(0deg);
+}
+ .a12-1 ,.a12-2{
+    transition: all .3s linear;
+     border-radius: 0px!important;
+}
+ .box1:hover .a12-1 ,.box1:hover .a12-2{
+     border-radius: 40px !important;
+}
+ .a13-1 ,.a13-2{
+    transition: all .3s linear;
+     border-radius: 0px!important;
+     transform: rotateZ(0deg);
+}
+ .box1:hover .a13-1 ,.box1:hover .a13-2{
+     transform: rotateZ(360deg);
+}
+ .a14-1 ,.a14-2{
+    transition: all .2s linear;
+     border-radius: 0px!important;
+     transform: rotateY(90deg);
+}
+ .box1:hover .a14-1 ,.box1:hover .a14-2{
+     transform: rotateY(0deg);
+}
+ .a15-1 ,.a15-2{
+    transition: all .2s cubic-bezier(0,2.02,.25,1.34);
+     transform: scale(0);
+}
+ .box1:hover .a15-2{
+     transform: scale(1);
+}
+ .box1:hover .a15-1{
+     transform: scale(1);
+     transition-delay:.1s;
+}
+  </style>
+        </head>
+<body>
+
+     <div class="common box1"> 
+        <div class="common ab">
+                           <a href="#"><i class="fa-solid fa-link"></i></a>
+                    <a class="anchor" href="www.google.com"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </div>
+         </div>
+
+         <div class="common box1"> 
+         <div class="common ab bc">
+               <a class="bc-1" href="#"><i class="fa-solid fa-link"></i></a>
+               <a class="anchor bc-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+         </div>
+         </div>
+
+         <div class="common box1"> 
+            <div class="common ab bc overlay6">
+               <a class="a7-1" href="#"><i class="fa-solid fa-link"></i></a>
+               <a  class="anchor a7-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+         
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay7">
+               <a class="a8-1" href="#"><i class="fa-solid fa-link"></i></a>
+               <a  class="anchor a8-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+         
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+               <a class="a9-1" href="#"><i class="fa-solid fa-link"></i></a>
+               <a  class="anchor a9-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+         
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+               <a class="a10-1" href="#"><i class="fa-solid fa-link"></i></a>
+               <a  class="anchor a10-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+               <a class="a11-1" href="#"><i class="fa-solid fa-link"></i></a>
+               <a  class="anchor a11-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+            <a class="a12-1" href="#"><i class="fa-solid fa-link"></i></a>
+            <a  class="anchor a12-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+         
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+            <a class="a13-1" href="#"><i class="fa-solid fa-link"></i></a>
+            <a  class="anchor a13-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+         
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+            <a class="a14-1" href="#"><i class="fa-solid fa-link"></i></a>
+            <a  class="anchor a14-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+         
+         <div class="common box1"> 
+            <div class="common ab bc overlay6 overlay8">
+            <a class="a15-1" href="#"><i class="fa-solid fa-link"></i></a>
+            <a  class="anchor a15-2" href="www.google.com" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+         </div>
+          </body>
+</html>
